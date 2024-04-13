@@ -1,12 +1,16 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:28px;
+  color: black;
+}
 
 .logo {
-  height: 6em;
+  height: 9em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -14,29 +18,36 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: #800080;
+  border-radius: 14px;
+  height: 20vh;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 2px 3px #00ffea79;
+}
+.card p{
+  font-size:18px;
 }
 
-.read-the-docs {
-  color: #888;
+.tag {
+  color: purple;
+}
+.compet {
+  color:#800080;
+  text-shadow: 1px 1px 3px #00ffea79;
+}
+.textBlock{
+  display: flex;
+}
+.slider-container{
+  max-width: 70vw;
+}
+.slider-container .slick-prev:before, .slider-container .slick-next:before {
+  color: black;
 }
